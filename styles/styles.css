@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-dominant: rgb(24, 24, 24);
+  --clr-secondary: rgb(220, 219, 219);
+  --clr-accent: rgb(161, 19, 233);
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 150%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 125%;
+}
+
+.nav--element,
+.header--element,
+.main--element {
+  padding: 16px 32px;
+}
+
+.nav--element,
+.header--element {
+  background-color: var(--clr-dominant);
+  color: var(--clr-secondary);
+}
+
+.nav--logo {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.header--content {
+  height: 600px;
+}
+
+.h1--text {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.4px;
+  margin-bottom: 16px;
+}
+
+.h1--sub__description {
+  margin: 8px 0 40px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* utils */
+
+.flex {
+  display: flex;
+}
+
+.flex--gap {
+  gap: 16px;
+}
+
+.flex--item__spb {
+  justify-content: space-between;
+}
+
+.flex--item__sc {
+  justify-content: center;
+}
+
+.flex--item--alc {
+  align-items: center;
+}
+
+.flex--dir__column {
+  flex-direction: column;
+}
+
+.nav--link {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: var(--clr-secondary);
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--clr-dominant);
+  transition: border 200ms ease-in-out;
+}
+
+.nav--link:hover {
+  border-bottom: 2px solid var(--clr-accent);
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 3px 1px 2px 1px rgba(0, 0, 0, 0.46);
+  text-decoration: none;
+  transition: background 200ms ease-in-out, border 200ms ease-in-out,
+    color 200ms ease-in-out;
+}
+
+.btn--hire__me {
+  background-color: var(--clr-accent);
+  border: 2px solid var(--clr-accent);
+  color: var(--clr-secondary);
+}
+
+.btn--hire__me:hover {
+  border: 2px solid var(--clr-accent);
+  background-color: var(--clr-secondary);
+  color: var(--clr-dominant);
+}
+
+.btn--social {
+  background-color: var(--clr-accent);
+  color: var(--clr-secondary);
+  margin: 0 8px;
+}
+
+.btn--social > i {
+  margin-right: 8px;
+}
+
+.sub--str {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.4px;
+  color: var(--clr-accent);
+}
