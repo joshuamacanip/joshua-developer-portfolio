@@ -8,6 +8,7 @@
   --clr-dominant: rgb(24, 24, 24);
   --clr-secondary: rgb(220, 219, 219);
   --clr-accent: rgb(161, 19, 233);
+  --clr-accent-2: rgb(95, 95, 95);
 }
 
 body {
@@ -72,14 +73,58 @@ h6 {
   font-weight: 400;
 }
 
+.about--section {
+  padding: 80px 0;
+}
+
+.personal--name {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.about--description {
+  font-size: 18px;
+  color: var(--clr-dominant);
+  padding: 16px 0;
+}
+
+.tools--title {
+  font-size: 24px;
+  border-bottom: 4px solid var(--clr-accent-2);
+  padding-bottom: 8px;
+  color: var(--clr-dominant);
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.tool--item {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.tool--item > p {
+  color: var(--clr-accent-2);
+}
+
+.fa--brands {
+  color: var(--clr-dominant);
+}
+
 /* utils */
 
 .flex {
   display: flex;
 }
 
-.flex--gap {
+.flex--gap,
+.grid--gap {
   gap: 16px;
+}
+
+.flex--basis-1 {
+  flex: 1 1 0px;
 }
 
 .flex--item__spb {
@@ -96,6 +141,14 @@ h6 {
 
 .flex--dir__column {
   flex-direction: column;
+}
+
+.d--grid {
+  display: grid;
+}
+
+.d--one__column {
+  grid-template-columns: 1fr;
 }
 
 .nav--link {
@@ -143,6 +196,7 @@ h6 {
   background-color: var(--clr-accent);
   color: var(--clr-secondary);
   margin: 0 8px;
+  font-size: 18px;
 }
 
 .btn--social > i {
@@ -155,4 +209,14 @@ h6 {
   font-style: italic;
   letter-spacing: 0.4px;
   color: var(--clr-accent);
+}
+
+.h2--text {
+  color: var(--clr-accent-2);
+  font-size: 400;
+  font-size: 32px;
+  padding-bottom: 4px;
+  border-bottom: 4px solid var(--clr-accent);
+  display: inline-block;
+  margin-bottom: 16px;
 }
