@@ -9,6 +9,7 @@
   --clr-secondary: rgb(220, 219, 219);
   --clr-accent: rgb(161, 19, 233);
   --clr-accent-2: rgb(95, 95, 95);
+  --clr-accent-3: rgb(197, 197, 197);
 }
 
 body {
@@ -19,6 +20,12 @@ body {
 
 li {
   list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 button,
@@ -37,7 +44,8 @@ h6 {
 
 .nav--element,
 .header--element,
-.main--element {
+.main--element,
+.footer--element {
   padding: 16px 32px;
 }
 
@@ -110,6 +118,99 @@ h6 {
 
 .fa--brands {
   color: var(--clr-dominant);
+}
+
+.project--section {
+  margin: 80px 0;
+}
+
+.project--container {
+  padding: 48px 0;
+}
+
+.project--grid {
+  display: grid;
+  gap: 24px;
+}
+
+.project--card {
+  border: 1px solid var(--clr-accent-3);
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 2px 2px 12px 1px var(--clr-accent-3);
+}
+
+.project--header__img__container {
+  position: relative;
+  height: 250px;
+}
+
+.img--overlay {
+  position: absolute;
+  background-color: rgba(167, 165, 165, 0.125);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.h3--text {
+  font-size: 24px;
+  color: var(--clr-dominant);
+  margin: 16px 0;
+}
+
+.project--main {
+  padding: 12px 16px;
+}
+
+.tech--tags__container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tech--tag {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--clr-accent-2);
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: var(--clr-secondary);
+}
+
+.tech--tag__html {
+  background-color: rgb(255, 69, 69);
+}
+
+.tech--tag__css {
+  background-color: rgb(82, 82, 252);
+}
+
+.tech--tag__js {
+  background-color: rgb(255, 231, 51);
+  color: var(--clr-dominant);
+}
+
+.app--description {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--clr-dominant);
+}
+
+.footer--element {
+  background-color: var(--clr-dominant);
+  color: var(--clr-secondary);
+}
+
+.footer--nav__list > li {
+  margin: 16px;
+}
+
+.copy--right {
+  display: block;
+  text-align: center;
 }
 
 /* utils */
@@ -219,4 +320,8 @@ h6 {
   border-bottom: 4px solid var(--clr-accent);
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.about--content__container {
+  padding: 24px 0;
 }
